@@ -1,0 +1,47 @@
+<div *ngFor="let bio of bio">
+<h2>Gretchen Krenn<span style= 'font-size: 12px; margin-left: 10px;'> {{bio.role}} </span></h2>
+  <img src="{{bio.biopic}}" alt="Smiley face" height="150" width="150">
+  <h2>Contact:</h2>
+  <div>{{bio.moblie}}</div>
+  <div>{{bio.email}}</div>
+  <div>{{bio.github}}</div>
+  <div>{{bio.location}}</div>
+  <div>{{bio.message}}</div>
+  <div>{{bio.skills}}</div>
+</div>
+
+<h2>Jobs</h2>
+<div *ngFor="let job of jobs">
+  <span>{{job.employer}}</span> {{job.title}}
+  <div>{{job.location}}</div>
+  <div>{{job.dates}}</div>
+  <div>{{job.url}}</div>
+</div>
+
+<h2>Projects</h2>
+<div *ngFor="let project of projects">
+  <div>{{project.title}}</div>
+  <div>{{project.dates}}</div>
+  <div>{{project.description}}</div>
+  <div>{{project.images}}</div>
+  <div>{{project.url}}</div>
+</div>
+
+<h2>Schools</h2>
+<div *ngFor="let school of schools">
+  <div>{{school.name}}</div>
+  <div>{{school.location}}</div>
+  <div>{{school.degree}}</div>
+  <div>{{school.majors}}</div>
+  <div>{{school.dates}}</div>
+  <div>{{school.url}}</div>
+</div>
+<h2>Online Certifications</h2>
+<div *ngFor="let online of online">
+  <div>{{online.title}}</div>
+  <div>{{online.school}}</div>
+  <div>{{online.dates}}</div>
+  <div>{{online.url}}</div>
+</div>
+
+
