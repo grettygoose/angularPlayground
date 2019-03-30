@@ -14,11 +14,12 @@ import {
   MatPaginatorModule,
   MatProgressSpinnerModule,
   MatMenuModule,
-  MatIconModule
+  MatIconModule,
 } from '@angular/material';
 import { OncoscapeComponent } from './oncoscape/oncoscape.component';
 import { SttrComponent } from './sttr/sttr.component';
 import { HicorComponent } from './hicor/hicor.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [AppComponent, MainComponent, OncoscapeComponent, SttrComponent, HicorComponent],
@@ -34,7 +35,8 @@ import { HicorComponent } from './hicor/hicor.component';
     MatPaginatorModule,
     MatProgressSpinnerModule,
     MatMenuModule,
-    MatIconModule
+    MatIconModule,
+    FlexLayoutModule
   ],
   exports: [
     MatButtonModule,

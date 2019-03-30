@@ -1,47 +1,82 @@
-<div *ngFor="let bio of bio">
-<h2>Gretchen Krenn<span style= 'font-size: 12px; margin-left: 10px;'> {{bio.role}} </span></h2>
-  <img src="{{bio.biopic}}" alt="Smiley face" height="150" width="150">
-  <h2>Contact:</h2>
-  <div>{{bio.moblie}}</div>
-  <div>{{bio.email}}</div>
-  <div>{{bio.github}}</div>
-  <div>{{bio.location}}</div>
-  <div>{{bio.message}}</div>
-  <div>{{bio.skills}}</div>
-</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-6 col-sm-12">
+      <div *ngFor="let bio of bio">
+        <h2 class="resume-name">gretchen krenn</h2>
+        <h3 class="resume-span">{{bio.role}}</h3>
+        <hr class="resume-hr">
+        <div class="clearfix">
+          <img src="{{bio.biopic}}" alt="gretty" class=" resume-img float-left">
+          <div style="padding-top:50px;">
+          <div class='resume-contact'>email<span class="bio-span"><a href="mailto:gidget5169@gmail.com"
+                style='text-decoration: none; color:#2A5DB0;'>{{bio.email}}</a></span></div>
+          <div class='resume-contact'>mobile<span class="bio-span"> {{bio.moblie}}</span></div>
+          <div class='resume-contact'>github<span class="bio-span"><a href='https://github.com/grettygoose'
+                style='text-decoration: none; color:#2A5DB0'>{{bio.github}}</a></span></div>
+          <div class='resume-contact'>location<span class="bio-span"> {{bio.location}}</span></div>
+        </div>
+        </div>
+      </div>
 
-<h2>Jobs</h2>
-<div *ngFor="let job of jobs">
-  <span>{{job.employer}}</span> {{job.title}}
-  <div>{{job.location}}</div>
-  <div>{{job.dates}}</div>
-  <div>{{job.url}}</div>
-</div>
+      <div class="resume-message">front end developer | caner researcher | dog lover | traveluster</div>
+    </div>
+    <div class="col-lg-6  col-sm-12" style="margin-top: 25px;">
+      <h2 class="resume-infos"><i class="material-icons">attach_file</i>projects</h2>
+      <hr class="resume-hr">
+      <!-- <div *ngFor="let project of projects">
+        <div>
+          <div>{{project.title}}</div>
+          <div>{{project.dates}}</div>
+          <div>{{project.description}}</div>
+          <div>{{project.images}}</div>
+          <a href="{{project.url}}">{{project.title}}</a>
+        </div>
+      </div> -->
 
-<h2>Projects</h2>
-<div *ngFor="let project of projects">
-  <div>{{project.title}}</div>
-  <div>{{project.dates}}</div>
-  <div>{{project.description}}</div>
-  <div>{{project.images}}</div>
-  <div>{{project.url}}</div>
+      <div *ngFor="let project of projects">
+        <div class="row">
+        <div class="col-md-3">
+      <div class="card" style="width: 18rem;">
+          <img class="card-img-top" src="{{project.images}}" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">{{project.title}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+  <div class="row" style="margin-top: 100px;">
+    <div class="col-lg-6 col-sm-12">
+      <h2 class="resume-infos"><i class="material-icons">laptop_mac</i>education</h2>
+      <hr class="resume-hr">
+      <div *ngFor="let school of schools">
+        <div><a href="{{school.url}}"
+            style='text-decoration: none; color:#2A5DB0'>{{school.name}}</a><span>--{{school.degree}}</span></div>
+        <div fxLayout="row" fxLayoutAlign="space-between center">{{school.dates}}<span
+            style='padding-right:75px;'>{{school.location}}</span></div>
+        <div style='margin-bottom: 10px;'>Degree: {{school.majors}}</div>
+      </div>
+      <h2 class="resume-infos"><i class="material-icons">headset</i>online certifcations</h2>
+      <div *ngFor="let online of online">
+        <div><a href="{{online.url}}"
+            style='text-decoration: none; color:#2A5DB0'>{{online.school}}</a><span>--{{online.title}}</span></div>
+        <div style='margin-bottom: 10px;' fxLayout="row" fxLayoutAlign="space-between center">Dates: {{online.dates}}
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-6 col-sm-12">
+      <h2 class="resume-infos"><i class="material-icons">code</i>employment</h2>
+      <hr class="resume-hr">
+      <div *ngFor="let job of jobs">
+        <div><a href="{{job.url}}"
+            style='text-decoration: none; color:#2A5DB0'>{{job.employer}}</a><span>--{{job.title}}</span></div>
+        <div style='margin-bottom: 10px;' fxLayout="row" fxLayoutAlign="space-between center">Dates: {{job.dates}}<span
+            style='padding-right:75px;'>{{job.location}}</span></div>
+            <div>{{job.description}}</div>
+      </div>
+    </div>
+  </div>
 </div>
-
-<h2>Schools</h2>
-<div *ngFor="let school of schools">
-  <div>{{school.name}}</div>
-  <div>{{school.location}}</div>
-  <div>{{school.degree}}</div>
-  <div>{{school.majors}}</div>
-  <div>{{school.dates}}</div>
-  <div>{{school.url}}</div>
-</div>
-<h2>Online Certifications</h2>
-<div *ngFor="let online of online">
-  <div>{{online.title}}</div>
-  <div>{{online.school}}</div>
-  <div>{{online.dates}}</div>
-  <div>{{online.url}}</div>
-</div>
-
 

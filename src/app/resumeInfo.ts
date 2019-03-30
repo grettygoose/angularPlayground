@@ -1,4 +1,13 @@
 
+export class BioInfo {
+  name: string;
+  role: string;
+  moblie: string;
+  email: string;
+  github: string;
+  location: string;
+  biopic: any;
+}
 export class JobsInfo {
   employer: string;
   title: string;
@@ -14,17 +23,7 @@ export class ProjectsInfo {
   images: any;
   url: string;
 }
-export class BioInfo {
-  name: string;
-  role: string;
-  moblie: string;
-  email: string;
-  github: string;
-  location: string;
-  message: any;
-  skills: any;
-  biopic: any;
-}
+
 export class SchoolInfo {
   name: string;
   location: string;
