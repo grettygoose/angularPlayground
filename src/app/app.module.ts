@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -18,11 +17,10 @@ import {
 } from '@angular/material';
 import { OncoscapeComponent } from './oncoscape/oncoscape.component';
 import { SttrComponent } from './sttr/sttr.component';
-import { HicorComponent } from './hicor/hicor.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
-  declarations: [AppComponent, MainComponent, OncoscapeComponent, SttrComponent, HicorComponent],
+  declarations: [AppComponent, MainComponent, OncoscapeComponent, SttrComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
