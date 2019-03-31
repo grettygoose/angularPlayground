@@ -26,8 +26,13 @@ export class ProjectsInfo {
   title: string;
   dates: string;
   description: string;
+  shortDescription: string;
+  contributions: string;
+  Pubs: string;
+  tech: string;
   images: any;
   url: string;
+  id: string;
 }
 
 export class SchoolInfo {

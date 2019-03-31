@@ -1,3 +1,10 @@
-<p>
-  oncoscape works!
-</p>
+<div class="container-fluid">
+  <div class="row">
+      <div *ngFor="let project of projects | slice:0:1">
+
+      <p>{{project.title}}</p>
+
+    </div>
+    </div>
+
+<button style="margin-top: 25px;" mat-raised-button color="primary" (click)="goBack()">Go Back</button>

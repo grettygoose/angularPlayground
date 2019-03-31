@@ -2,6 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
+import { OncoscapeComponent } from './oncoscape/oncoscape.component';
+import { SttrComponent } from './sttr/sttr.component';
+import { MouseAtlasComponent } from './mouse-atlas/mouse-atlas.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import {
@@ -15,12 +18,20 @@ import {
   MatMenuModule,
   MatIconModule,
 } from '@angular/material';
-import { OncoscapeComponent } from './oncoscape/oncoscape.component';
-import { SttrComponent } from './sttr/sttr.component';
+
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { AppRoutingModule } from './/app-routing.module';
+import { RouterModule, Routes } from '@angular/router';
+
 
 @NgModule({
-  declarations: [AppComponent, MainComponent, OncoscapeComponent, SttrComponent],
+  declarations: [
+    AppComponent, 
+    MainComponent, 
+    OncoscapeComponent, 
+    SttrComponent, 
+    MouseAtlasComponent
+  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -34,7 +45,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatProgressSpinnerModule,
     MatMenuModule,
     MatIconModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    AppRoutingModule
+    
+
   ],
   exports: [
     MatButtonModule,

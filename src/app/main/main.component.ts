@@ -1,11 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
 import { JobsInfo, ProjectsInfo, BioInfo, SchoolInfo, OnlineInfo } from '../resumeInfo';
 import {  JOBS, PROJECTS, BIO, SCHOOLS, ONLINE, SKILL } from '../resumeDetails';
+import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
-  styleUrls: ['./main.component.scss']
+  styleUrls: ['./main.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
+
 })
 export class MainComponent implements OnInit {
   jobs = JOBS;
@@ -16,7 +20,10 @@ export class MainComponent implements OnInit {
   skill = SKILL;
 
 
-  constructor() { }
+  constructor(
+    private route: ActivatedRoute,
+    private location: Location
+  ) { }
 
   ngOnInit() {
   }

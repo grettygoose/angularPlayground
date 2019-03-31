@@ -36,7 +36,7 @@ export const JOBS: JobsInfo[] = [
     dates: '2015- Current',
     url: 'https://www.fredhutch.org/en.html',
     // tslint:disable-next-line:max-line-length
-    description: 'Research scientist and clinical project manager for internationally recognized translational medicine research group. Collaborate with 40+ researchers, clinicians, and principal investigators across multiple major'
+    description: 'Research scientist and clinical project manager for internationally recognized translational medicine research group',
   },
   {
     employer: 'Fred Hutch',
@@ -45,7 +45,7 @@ export const JOBS: JobsInfo[] = [
     dates: '2013- 2015',
     url: 'https://www.fredhutch.org/en.html',
     // tslint:disable-next-line:max-line-length
-    description: 'Research scientist and clinical project manager for internationally recognized translational medicine research group. Collaborate with 40+ researchers, clinicians, and principal investigators across multiple major'
+    description: 'Research scientist and clinical project manager for internationally recognized translational medicine research group',
   },
   {
     employer: 'University of Washington',
@@ -63,38 +63,42 @@ export const PROJECTS: ProjectsInfo[] = [
     title: 'Oncoscape',
     dates: '2015 -Current',
     // tslint:disable-next-line:max-line-length
-    description: 'Seattle Tumor Translational Research (STTR) assists cancer researchers and clinicians to extract biological',
+    shortDescription: 'Seattle Tumor Translational Research (STTR) assists cancer researchers and clinicians to extract biological',
+    description: '',
+    contributions: '',
+    Pubs: '',
+    tech: '',
     images: ['assets/ChromatinStructure.png'],
-    url: 'https://oncoscape.v3.sttrcancer.org/'
+    url: 'https://oncoscape.v3.sttrcancer.org/',
+    id: 'oncoscape'
 
    },
     {
     title: 'Mouse Atlas',
     dates: '2019- Current',
     // tslint:disable-next-line:max-line-length
+    shortDescription: '',
     description: '',
+    contributions: '',
+    Pubs: '',
+    tech: '',
     images: ['assets/2.2MCells.png'],
-    url: 'https://hicoriq.org/#/'
+    url: 'https://hicoriq.org/#/',
+    id: 'mouse-atlas'
 
     },
-
-
-   // {
-  //   'title': 'Hicor-IQ',
-  //   'dates': '2017- Current',
-  //   // tslint:disable-next-line:max-line-length
-  //   'description': 'A single resource to be used by payers, providers, and researchers for information about what matters in cancer care: quality and cost.',
-  //   'images': ['images/hicor.png'],
-  //   'url': 'https://hicoriq.org/#/'
-
-  // },
    {
     title: 'STTRConnect',
     dates: '2015- Current',
     // tslint:disable-next-line:max-line-length
-    description: 'An externally facing website for finding experts and resources within the ',
-    images: ['assets/2.2MCells.png'],
-    url: 'http://resources.sttrcancer.org/member-connect'
+    shortDescription: 'An externally facing website for finding experts and resources within the ',
+    description: '',
+    contributions: '',
+    Pubs: '',
+    tech: '',
+    images: ['assets/sttr.png'],
+    url: 'http://resources.sttrcancer.org/member-connect',
+    id: 'sttr'
 
   }
 
@@ -125,7 +129,7 @@ export const ONLINE: OnlineInfo[] = [
     url: 'https://confirm.udacity.com/CRKC5CPK'
   },
   {
-    title: 'Udemy (various courses)',
+    title: 'Various Courses',
     school: 'Udemy',
     dates: '2015-current',
     url: 'https://www.udemy.com/',

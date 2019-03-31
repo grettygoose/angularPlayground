@@ -3,13 +3,14 @@ import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import {  JOBS, PROJECTS, BIO, SCHOOLS, ONLINE, SKILL } from '../resumeDetails';
 
+
 @Component({
-  selector: 'app-sttr',
-  templateUrl: './sttr.component.html',
-  styleUrls: ['./sttr.component.scss'],
+  selector: 'app-mouse-atlas',
+  templateUrl: './mouse-atlas.component.html',
+  styleUrls: ['./mouse-atlas.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class SttrComponent implements OnInit {
+export class MouseAtlasComponent implements OnInit {
   jobs = JOBS;
   projects = PROJECTS;
   bio = BIO;
@@ -20,7 +21,9 @@ export class SttrComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private location: Location
-  ) { }
+  ) {
+
+  }
 
   ngOnInit() {
   }
@@ -28,5 +31,4 @@ export class SttrComponent implements OnInit {
   goBack(): void {
     this.location.back();
   }
-
 }
