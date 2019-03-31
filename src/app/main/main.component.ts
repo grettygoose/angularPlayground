@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { JobsInfo, ProjectsInfo, BioInfo, SchoolInfo, OnlineInfo } from '../resumeInfo';
-import {  JOBS, PROJECTS, BIO, SCHOOLS, ONLINE } from '../resumeDetails';
+import {  JOBS, PROJECTS, BIO, SCHOOLS, ONLINE, SKILL } from '../resumeDetails';
 
 @Component({
   selector: 'app-main',
@@ -13,6 +13,7 @@ export class MainComponent implements OnInit {
   bio = BIO;
   schools = SCHOOLS;
   online = ONLINE;
+  skill = SKILL;
 
 
   constructor() { }

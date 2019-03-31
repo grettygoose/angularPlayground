@@ -7,6 +7,12 @@ export class BioInfo {
   github: string;
   location: string;
   biopic: any;
+  resume: any;
+}
+export class SkillInfo {
+  me: string;
+  tech: string;
+  management: string;
 }
 export class JobsInfo {
   employer: string;
