@@ -28,7 +28,8 @@ export class ProjectsInfo {
   description: string;
   shortDescription: string;
   contributions: string;
-  Pubs: string;
+  pubTitle: string;
+  pubs: string;
   tech: string;
   images: any;
   url: string;

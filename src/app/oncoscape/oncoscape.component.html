@@ -1,10 +1,13 @@
 <div class="container-fluid">
   <div class="row">
-      <div *ngFor="let project of projects | slice:0:1">
-
-      <p>{{project.title}}</p>
-
+    <div *ngFor="let project of projects | slice:0:1">
+        <img src="{{project.images}}" style="width: 200px; height: 200px;">
+        <p>{{project.description}}</p>
+        <a href={{project.url}></a>
+        <p>{{project.tech}}</p>
+        <p>{{project.contributions}}</p>
+        <p>{{project.pubTitle}}</p>
+        <p>{{project.pubs}}</p>
     </div>
-    </div>
-
-<button style="margin-top: 25px;" mat-raised-button color="primary" (click)="goBack()">Go Back</button>
+  </div>
+  <button style="margin-top: 25px;" mat-raised-button color="primary" (click)="goBack()">Go Back</button>

@@ -2,7 +2,15 @@
     <div class="row">
         <div *ngFor="let project of projects | slice:1:2">
 
-        <p>{{project.title}}</p>
+            <p>{{project.title}}</p>
+            <img src="{{project.images}}" style="width: 200px; height: 200px;">
+            <p>{{project.description}}</p>
+            <a href={{project.url}></a>
+            <p>{{project.tech}}</p>
+            <p>{{project.contributions}}</p>
+            <p>{{project.pubTitle}}</p>
+            <p>{{project.pubs}}</p>
+
 
       </div>
       </div>

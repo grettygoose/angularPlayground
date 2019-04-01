@@ -62,12 +62,12 @@ export const PROJECTS: ProjectsInfo[] = [
   {
     title: 'Oncoscape',
     dates: '2015 -Current',
-    // tslint:disable-next-line:max-line-length
     shortDescription: 'Seattle Tumor Translational Research (STTR) assists cancer researchers and clinicians to extract biological',
     description: '',
     contributions: '',
-    Pubs: '',
-    tech: '',
+    pubTitle: 'Nature: The single-cell transcriptional landscape of mammalian organogenesis',
+    pubs: '',
+    tech: 'AngularJS, plotygot storage (AWS S3, dynamo), WebGL, D3.js, ',
     images: ['assets/ChromatinStructure.png'],
     url: 'https://oncoscape.v3.sttrcancer.org/',
     id: 'oncoscape'
@@ -76,26 +76,26 @@ export const PROJECTS: ProjectsInfo[] = [
     {
     title: 'Mouse Atlas',
     dates: '2019- Current',
-    // tslint:disable-next-line:max-line-length
     shortDescription: '',
     description: '',
-    contributions: '',
-    Pubs: '',
-    tech: '',
+    contributions: 'light coding mainly project managenge between serveral UW labs and fred hutch data viz group',
+    pubTitle: 'Nature: The single-cell transcriptional landscape of mammalian organogenesis',
+    pubs: 'https://www.nature.com/articles/s41586-019-0969-x',
+    tech: 'Protobuf, WebGl, AngularJS, AWS',
     images: ['assets/2.2MCells.png'],
-    url: 'https://hicoriq.org/#/',
+    url: 'https://oncoscape.v3.sttrcancer.org/atlas.gs.washington.edu.mouse.rna/landing',
     id: 'mouse-atlas'
 
     },
    {
     title: 'STTRConnect',
     dates: '2015- Current',
-    // tslint:disable-next-line:max-line-length
     shortDescription: 'An externally facing website for finding experts and resources within the ',
     description: '',
     contributions: '',
-    Pubs: '',
-    tech: '',
+    pubTitle: 'Nature: The single-cell transcriptional landscape of mammalian organogenesis',
+    pubs: '',
+    tech: 'CraftCMS, Javascript',
     images: ['assets/sttr.png'],
     url: 'http://resources.sttrcancer.org/member-connect',
     id: 'sttr'
