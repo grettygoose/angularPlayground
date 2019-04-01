@@ -31,7 +31,7 @@ export const SKILL: SkillInfo[] = [
 export const JOBS: JobsInfo[] = [
   {
     employer: 'Fred Hutch',
-    title: 'Software Development Engineer',
+    title: 'Software Development Engineer - Seattle Translational Tumor Research',
     location: 'Seattle, WA',
     dates: '2015- Current',
     url: 'https://www.fredhutch.org/en.html',
@@ -40,21 +40,21 @@ export const JOBS: JobsInfo[] = [
   },
   {
     employer: 'Fred Hutch',
-    title: 'Program Manager',
+    title: 'Program Manager - Breast Speciman Repository',
     location: 'Seattle, WA',
     dates: '2013- 2015',
     url: 'https://www.fredhutch.org/en.html',
     // tslint:disable-next-line:max-line-length
-    description: 'Research scientist and clinical project manager for internationally recognized translational medicine research group',
+    description: 'BSR, impacts research and treatment of breast cancer by providing high-quality, data-rich samples that meet the strict requirements of research',
   },
   {
-    employer: 'University of Washington',
-    title: 'Research Scientist',
+    employer: 'University of Washington' ,
+    title: 'Research Scientist - Cancer Immunotherapy Trials Network',
     location: 'Seattle, WA',
     dates: '2011- 2013',
     url: 'http://www.uwmedicine.org/',
     // tslint:disable-next-line:max-line-length
-    description: 'Research scientist and clinical project manager for internationally recognized translational medicine research group. Collaborate with 40+ researchers, clinicians, and principal investigators across multiple major'
+    description: 'Research scientist and clinical project manager for internationally recognized translational medicine research group.'
   }
 ];
 
@@ -88,7 +88,7 @@ export const PROJECTS: ProjectsInfo[] = [
 
     },
    {
-    title: 'STTRConnect',
+    title: 'STTR Connect',
     dates: '2015- Current',
     shortDescription: 'An externally facing website for finding experts and resources within the ',
     description: '',
@@ -96,7 +96,7 @@ export const PROJECTS: ProjectsInfo[] = [
     pubTitle: 'Nature: The single-cell transcriptional landscape of mammalian organogenesis',
     pubs: '',
     tech: 'CraftCMS, Javascript',
-    images: ['assets/sttr.png'],
+    images: ['assets/sttr.jpg'],
     url: 'http://resources.sttrcancer.org/member-connect',
     id: 'sttr'
 
