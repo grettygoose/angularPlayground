@@ -2,54 +2,44 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @include mat-core();
 
-$primary: mat-palette($mat-blue, 600);
-$accent: mat-palette($mat-blue, 200);
-$warn: mat-palette($mat-deep-orange);
-
-// lump together
-$theme: mat-light-theme($primary, $accent, $warn);
-
-// call
-@include angular-material-theme($theme);
-
-$custom-typography: mat-typography-config(
-  $font-family: 'Lato, monospace',
-  $headline: mat-typography-level(32px, 32px, 300),
-  $title: mat-typography-level(13px, 16px, 300),
-  $body-1: mat-typography-level(13px, 16px, 300),
-  $body-2: mat-typography-level(13px, 16px, 300),
-  $button: mat-typography-level(13px, 16px, 300),
-  $input: mat-typography-level(1em, 1, 300),
-  $subheading-2: mat-typography-level(13px, 16px, 300)
-);
 
 /* Material Icon Sizes */
-.material-icons.md-18 { font-size: 18px; }
-.material-icons.md-24 { font-size: 24px; }
-.material-icons.md-36 { font-size: 36px; }
-.material-icons.md-48 { font-size: 48px; }
+.material-icons.md-18 {
+  font-size: 18px;
+}
+
+.material-icons.md-24 {
+  font-size: 24px;
+}
+
+.material-icons.md-36 {
+  font-size: 36px;
+}
+
+.material-icons.md-48 {
+  font-size: 48px;
+}
 
 .material-icons {
   padding-right: 10px;
 }
-@include angular-material-typography($custom-typography);
-/* Disable Text Select */
+
 
 // Global Styles
 * {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
 html,
 body {
   height: 100%;
-  font-family: 'Lato', sans-serif #5f6368;
-  margin: 50px 50px 50px 50px;
+  font-family: 'Lato', sans-serif;
+  margin: 25px 25px 25px 25px;
   font-weight: 300;
   background: #fafafa;
   color: #333;
@@ -58,93 +48,248 @@ body {
 
 }
 
+
+// Extra small devices (portrait phones, less than 576px)
+// No media query since this is the default in Bootstrap
 .resume-name {
   font-weight: 300;
-  font-size: 2rem;
+  font-size: 1.8rem;
   letter-spacing: 1px;
 }
-.resume-span {
-  font-size: 13px;
-    letter-spacing: 2px;
-    color: #83757D;
 
 
-}
+
 .resume-infos {
   font-size: 1.7rem;
   font-weight: 300;
   letter-spacing: 1px;
+  padding-top:20px;
 }
 
 .resume-hr {
   border-top: 1px solid #8c8b8b;
-  margin-right: 90px;
+  margin-right: 10px;
   margin-bottom: 26px;
 }
+
 .resume-contact {
-  // font-size: 13px;
-  // letter-spacing: 1px;
-  margin-left: 175px;
-  // padding-top: 5px;
+  margin-left: 0px;
+  font-size: 13px;
 }
+
 .resume-img {
-  margin-top: 36px;
-  margin-bottom: 25px;
+  margin-top: 0px;
+  margin-bottom: 20px;
   border-radius: 50%;
   width: 125px;
   height: 125px;
-  border:1px solid #D3D3D3;
+  border: 1px solid #D3D3D3;
+
 }
+
 .resume-message {
-  // font-size: 13px;
-  // letter-spacing: 1px;
   padding-top: 10px;
+  font-size: 13px;
 }
+
 .bio-span {
   color: #333;
   padding-left: 10px;
   text-decoration: none;
-  color:#2A5DB0;
-  // font-size: 13px;
-  // letter-spacing: 1px;
+  color: #2A5DB0;
 }
+
 .bio-ahref {
   text-decoration: none;
   color: #2A5DB0;
 }
+
 .bio-padding {
-  padding-top:40px;
+  padding-top: 0px;
 }
-.projects-margin {
-  margin-top: 25px;
-}
+
+
+
 .projects-row {
   margin-top: 80px;
   text-align: center;
 }
+
 .projects-img {
   cursor: pointer;
   border-radius: 50%;
-  width:150px;
-  height:150px;
-  border:1px solid #D3D3D3;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #D3D3D3;
   margin-bottom: 20px;
 }
+
 .project-title {
-  color:#2A5DB0;
+  color: #2A5DB0;
   letter-spacing: 1px;
   text-decoration: none;
   text-align: center;
 }
+
 .school-padding {
-  padding-right:75px;
+  padding-right: 75px;
 }
+
 .school-margin {
-  margin-bottom:20px;
+  margin-bottom: 20px;
 }
 
+.online-text {
+  text-decoration: none;
+  color: #2A5DB0;
+}
 
+.job-layout {
+  margin-bottom: 20px;
+  max-width: 75%;
+}
+
+.zoom:hover {
+  transform: scale(1.1);
+
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  body {
+    font-family: 'Lato', sans-serif #5f6368;
+    margin: 50px 50px 50px 50px;
+
+
+  }
+  .resume-name {
+    font-size: 2rem;
+    display: inline;
+
+  }
+
+  .resume-span {
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding-left: 20px;
+
+  }
+
+
+  .resume-infos {
+    font-size: 1.7rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+
+  }
+
+  .resume-hr {
+    border-top: 1px solid #8c8b8b;
+    margin-right: 90px;
+    margin-bottom: 26px;
+  }
+
+  .resume-contact {
+    margin-left: 10px;
+    font-size: 15px;
+  }
+
+  .resume-img {
+    margin-top: 36px;
+    margin-bottom: 25px;
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+    border: 1px solid #D3D3D3;
+
+  }
+
+  .resume-message {
+    font-size: 15px;
+  }
+
+  .bio-span {
+    color: #333;
+    padding-left: 10px;
+    text-decoration: none;
+    color: #2A5DB0;
+    font-size: 15px;
+    // letter-spacing: 1px;
+  }
+
+  .bio-ahref {
+    text-decoration: none;
+    color: #2A5DB0;
+  }
+
+  .bio-padding {
+    padding-top: 40px;
+  }
+
+  .projects-margin {
+    margin-top: 25px;
+  }
+
+  .projects-row {
+    margin-top: 80px;
+    text-align: center;
+  }
+
+  .projects-img {
+    cursor: pointer;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    border: 1px solid #D3D3D3;
+    margin-bottom: 20px;
+  }
+
+  .project-title {
+    color: #2A5DB0;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-align: center;
+  }
+  .project-left {
+    margin-left: 40px;
+  }
+
+  .school-padding {
+    padding-right: 75px;
+  }
+
+  .school-margin {
+    margin-bottom: 20px;
+  }
+
+  .online-text {
+    text-decoration: none;
+    color: #2A5DB0;
+  }
+
+  .job-layout {
+    margin-bottom: 20px;
+    max-width: 75%;
+  }
 
   .zoom:hover {
-    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transform: scale(1.1);
+
   }
+
+}

@@ -3,12 +3,17 @@
     <div class="col-lg-6 col-sm-12">
       <!-- Start Bio Section -->
       <div *ngFor="let bio of bio">
-        <h2 class="resume-name">gretchen krenn</h2>
-        <h3 class="resume-span">{{bio.role}}</h3>
+
+            <h2 class="resume-name">gretchen krenn
+              <span class="resume-span d-none d-sm-block">{{bio.role}}</span>
+            </h2>
+
         <hr class="resume-hr">
-        <div class="clearfix">
-          <img src="{{bio.biopic}}" alt="gretty" class="resume-img float-left">
-          <div class="col-sm-12 bio-padding">
+        <div class="row">
+         <div class="col-sm-12 col-lg-2">
+          <img src="{{bio.biopic}}" alt="gretty" class="resume-img">
+        </div>
+          <div class="col-sm-12 col-lg-9 bio-padding">
             <div class='resume-contact'>email:<span class="bio-span">
                 <a style="text-decoration: none;" class="bio-ahref" href="mailto:gidget5169@gmail.com">{{bio.email}}</a>
               </span>
@@ -29,24 +34,26 @@
               </span>
             </div>
           </div>
+
         </div>
       </div>
       <!-- Start Skill Section -->
-      <div *ngFor="let skill of skill">
+      <div *ngFor="let skill of skill ">
         <div class="resume-message">Me: {{skill.me}}</div>
         <div class="resume-message">Technologies: {{skill.tech}}</div>
         <div class="resume-message">Management: {{skill.management}}</div>
       </div>
     </div>
-    <div class="col-lg-6 col-sm-12 projects-margin">
+    <div class="col-lg-6 col-sm-12 ">
       <h2 class="resume-infos">
         <i class="material-icons">attach_file</i>projects
       </h2>
       <hr class="resume-hr">
       <!-- Start Project Section -->
-      <div class="row" style="margin-top: 80px; text-align: center;">
-        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 zoom " *ngFor="let project of projects"
-          style="margin-left: 40px;">
+      <div class="row" style="margin-top: 40px; text-align: center;">
+        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 zoom"
+          *ngFor="let project of projects"
+          class="project-left">
           <img src="{{project.images}}" alt="card image" routerLink="/{{project.id}}" class="projects-img">
           <p>
             <a routerLink="/{{project.id}}" class="project-title">{{project.title}}</a>
@@ -66,28 +73,29 @@
         <div fxLayout="row" fxLayoutAlign="space-between center" class="school-padding">{{school.dates}}
           <span>{{school.location}}</span>
         </div>
-        <div style='margin-bottom: 20px;'>Degree: {{school.majors}}</div>
+        <div class="school-margin">Degree: {{school.majors}}</div>
       </div>
       <br>
-      <h2 class="resume-infos"><i class="material-icons">headset</i>online certifcations</h2>
+      <h2 class="resume-infos">
+        <i class="material-icons">headset</i>online certifcations
+      </h2>
       <div *ngFor="let online of online">
-        <div>
-          <a href="{{online.url}}" style='text-decoration: none; color:#2A5DB0'>{{online.school}}</a>
-          <span> - {{online.title}}</span>
-        </div>
-        <div fxLayout="row" fxLayoutAlign="space-between center" class="school-margin">Dates: {{online.dates}}
-        </div>
+        <a href="{{online.url}}" class="online-text">{{online.school}}</a>
+        <span> - {{online.title}}</span>
+        <div fxLayout="row" fxLayoutAlign="space-between center" class="school-margin">Dates: {{online.dates}}</div>
       </div>
     </div>
     <div class="col-lg-6 col-sm-12">
-      <h2 class="resume-infos"><i class="material-icons">code</i>employment</h2>
+      <h2 class="resume-infos">
+        <i class="material-icons">code</i>employment
+      </h2>
       <hr class="resume-hr">
       <!-- Start Employment Section -->
       <div *ngFor="let job of jobs">
         <div>{{job.employer}}<span> - {{job.title}}</span></div>
         <div fxLayout="row" fxLayoutAlign="space-between center">Dates:
-          {{job.dates}}<span style='padding-right:75px;'>{{job.location}}</span></div>
-        <div style='margin-bottom: 20px; max-width: 75%;'>{{job.description}}</div>
+          {{job.dates}}<span class='school-padding'>{{job.location}}</span></div>
+        <div class="job-layout">{{job.description}}</div>
       </div>
     </div>
   </div>
