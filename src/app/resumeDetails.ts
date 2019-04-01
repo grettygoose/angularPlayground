@@ -36,7 +36,7 @@ export const JOBS: JobsInfo[] = [
     dates: '2015- Current',
     url: 'https://www.fredhutch.org/en.html',
     // tslint:disable-next-line:max-line-length
-    description: 'Research scientist and clinical project manager for internationally recognized translational medicine research group',
+    description: 'Oncoscape a data visualization and analysis platform for clincal and molecular data'
   },
   {
     employer: 'Fred Hutch',

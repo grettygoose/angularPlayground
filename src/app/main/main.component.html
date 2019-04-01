@@ -25,58 +25,51 @@
         <div class="resume-message">Management: {{skill.management}}</div>
       </div>
     </div>
+
     <div class="col-lg-6  col-sm-12" style="margin-top: 25px;">
       <h2 class="resume-infos"><i class="material-icons">attach_file</i>projects</h2>
       <hr class="resume-hr">
 
 
-
-
-      <div class="row card-group">
-        <div class="col-3" *ngFor="let project of projects">
-          <div class="card-deck">
-            <div class="card text-center">
-              <div class="card-block" >
-                <img class="card-img-top" src="{{project.images}}" alt="card image" >
-                <div class="card-body" >
-                  <a class="card-text" routerLink="/{{project.id}}" style="color:#2A5DB0'">View {{project.title}}</a>
-                </div>
-              </div>
-            </div>
-          </div>
+      <div class="row" style="margin-top: 80px;">
+        <div class="col-4" *ngFor="let project of projects">
+          <img src="{{project.images}}" class="hoverable" alt="card image"
+            style="border-radius: 50%; width:150px; height:150px;  border:1px solid #666; margin-bottom: 20px; ">
+          <p><a routerLink="/{{project.id}}" style="color:#2A5DB0; ">{{project.title}}</a></p>
         </div>
       </div>
     </div>
 
-    <div class="row" style='margin-top: 100px;'>
-      <div class="col-lg-6 col-sm-12">
-        <h2 class="resume-infos"><i class="material-icons">laptop_mac</i>education</h2>
-        <hr class="resume-hr">
-        <div *ngFor="let school of schools">
-          <div>{{school.name}}<span> - {{school.degree}}</span></div>
-          <div fxLayout="row" fxLayoutAlign="space-between center">{{school.dates}}<span
-              style='padding-right:75px;'>{{school.location}}</span></div>
-          <div style='margin-bottom: 20px;'>Degree: {{school.majors}}</div>
-        </div>
-        <br>
-        <h2 class="resume-infos"><i class="material-icons">headset</i>online certifcations</h2>
+  </div>
+  <div class="row" style='margin-top: 100px;'>
+    <div class="col-lg-6 col-sm-12">
+      <h2 class="resume-infos"><i class="material-icons">laptop_mac</i>education</h2>
+      <hr class="resume-hr">
+      <div *ngFor="let school of schools">
+        <div>{{school.name}}<span> - {{school.degree}}</span></div>
+        <div fxLayout="row" fxLayoutAlign="space-between center">{{school.dates}}<span
+            style='padding-right:75px;'>{{school.location}}</span></div>
+        <div style='margin-bottom: 20px;'>Degree: {{school.majors}}</div>
+      </div>
+      <br>
+      <h2 class="resume-infos"><i class="material-icons">headset</i>online certifcations</h2>
 
-        <div *ngFor="let online of online">
-          <div><a href="{{online.url}}" style='text-decoration: none; color:#2A5DB0'>{{online.school}}</a><span> -
-              {{online.title}}</span></div>
-          <div style='margin-bottom: 20px;' fxLayout="row" fxLayoutAlign="space-between center">Dates: {{online.dates}}
-          </div>
+      <div *ngFor="let online of online">
+        <div><a href="{{online.url}}" style='text-decoration: none; color:#2A5DB0'>{{online.school}}</a><span> -
+            {{online.title}}</span></div>
+        <div style='margin-bottom: 20px;' fxLayout="row" fxLayoutAlign="space-between center">Dates: {{online.dates}}
         </div>
       </div>
-      <div class="col-lg-6 col-sm-12">
-        <h2 class="resume-infos"><i class="material-icons">code</i>employment</h2>
-        <hr class="resume-hr">
-        <div *ngFor="let job of jobs">
-          <div>{{job.employer}}<span> - {{job.title}}</span></div>
-          <div fxLayout="row" fxLayoutAlign="space-between center">Dates:
-            {{job.dates}}<span style='padding-right:75px;'>{{job.location}}</span></div>
-          <div style='margin-bottom: 10px;'>{{job.description}}</div>
-        </div>
+    </div>
+    <div class="col-lg-6 col-sm-12">
+      <h2 class="resume-infos"><i class="material-icons">code</i>employment</h2>
+      <hr class="resume-hr">
+      <div *ngFor="let job of jobs">
+        <div>{{job.employer}}<span> - {{job.title}}</span></div>
+        <div fxLayout="row" fxLayoutAlign="space-between center">Dates:
+          {{job.dates}}<span style='padding-right:75px;'>{{job.location}}</span></div>
+        <div style='margin-bottom: 10px;'>{{job.description}}</div>
       </div>
     </div>
   </div>
+</div>
