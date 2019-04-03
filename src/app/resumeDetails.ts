@@ -9,7 +9,7 @@ import {
 
 export const BIO: BioInfo[] = [
   {
-    name: 'Gretchen Krenn',
+    name: 'gretchen krenn',
     role: 'software engineer / project manager',
     moblie: '206-331-2720',
     email: 'gidget5169@gmail.com',
@@ -31,7 +31,8 @@ export const SKILL: SkillInfo[] = [
 export const JOBS: JobsInfo[] = [
   {
     employer: 'Fred Hutch',
-    title: 'Software Development Engineer - Seattle Translational Tumor Research',
+    title: 'Software Development Engineer',
+    program: 'Seattle Translational Tumor Research (STTR)',
     location: 'Seattle, WA',
     dates: '2015- Current',
     url: 'https://www.fredhutch.org/en.html',
@@ -40,7 +41,8 @@ export const JOBS: JobsInfo[] = [
   },
   {
     employer: 'Fred Hutch',
-    title: 'Program Manager - Breast Speciman Repository',
+    title: 'Program Manager - Breast Speciman Repository (BSR)',
+    program: 'Breast Speciman Repository',
     location: 'Seattle, WA',
     dates: '2013- 2015',
     url: 'https://www.fredhutch.org/en.html',
@@ -49,7 +51,8 @@ export const JOBS: JobsInfo[] = [
   },
   {
     employer: 'University of Washington' ,
-    title: 'Research Scientist - Cancer Immunotherapy Trials Network',
+    title: 'Research Scientist - ',
+    program: 'Cancer Immunotherapy Trials Network (CITN)',
     location: 'Seattle, WA',
     dates: '2011- 2013',
     url: 'http://www.uwmedicine.org/',

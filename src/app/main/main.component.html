@@ -3,17 +3,19 @@
     <div class="col-lg-6 col-sm-12">
       <!-- Start Bio Section -->
       <div *ngFor="let bio of bio">
-
-            <h2 class="resume-name">gretchen krenn
-              <span class="resume-span d-none d-sm-block">{{bio.role}}</span>
-            </h2>
-
+          <div class="title">
+              <h2 class="resume-name">{{bio.name}}</h2>
+              <span class="resume-span">{{bio.role}}</span>
+            </div>
+        <!-- <h2 class="resume-name">gretchen krenn
+          <span class="resume-span">{{bio.role}}</span>
+        </h2> -->
         <hr class="resume-hr">
         <div class="row">
-         <div class="col-sm-12 col-lg-2">
-          <img src="{{bio.biopic}}" alt="gretty" class="resume-img">
-        </div>
-          <div class="col-sm-12 col-lg-9 bio-padding">
+          <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 d-none d-sm-block">
+            <img src="{{bio.biopic}}" alt="gretty" class="resume-img">
+          </div>
+          <div class="col-sm-12 col-lg-9 col-md-9 bio-padding">
             <div class='resume-contact'>email:<span class="bio-span">
                 <a style="text-decoration: none;" class="bio-ahref" href="mailto:gidget5169@gmail.com">{{bio.email}}</a>
               </span>
@@ -34,7 +36,6 @@
               </span>
             </div>
           </div>
-
         </div>
       </div>
       <!-- Start Skill Section -->
@@ -44,21 +45,23 @@
         <div class="resume-message">Management: {{skill.management}}</div>
       </div>
     </div>
-    <div class="col-lg-6 col-sm-12 ">
+    <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
       <h2 class="resume-infos">
         <i class="material-icons">attach_file</i>projects
       </h2>
       <hr class="resume-hr">
       <!-- Start Project Section -->
-      <div class="row" style="margin-top: 40px; text-align: center;">
-        <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 zoom"
-          *ngFor="let project of projects"
-          class="project-left">
-          <img src="{{project.images}}" alt="card image" routerLink="/{{project.id}}" class="projects-img">
+      <div class="row">
+          <figure class="figure" *ngFor="let project of projects">
+              <img src="{{project.images}}" routerLink="/{{project.id}}" class=" projects-img mt-lg-5 ml-lg-5  " alt="project pic">
+              <figcaption class="ml-lg-5" style="text-align: center;"><a class="project-title" style="text-decoration: none;" routerLink="/{{project.id}}">{{project.title}}</a></figcaption>
+            </figure>
+        <!-- <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12 " *ngFor="let project of projects" class="project-left">
+          <img src="{{project.images}}" alt="card image" routerLink="/{{project.id}}" class="projects-img mt-lg-5  mt-md-5 mt-sm-3">
           <p>
             <a routerLink="/{{project.id}}" class="project-title">{{project.title}}</a>
           </p>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
@@ -93,6 +96,7 @@
       <!-- Start Employment Section -->
       <div *ngFor="let job of jobs">
         <div>{{job.employer}}<span> - {{job.title}}</span></div>
+        <div>{{job.program}}</div>
         <div fxLayout="row" fxLayoutAlign="space-between center">Dates:
           {{job.dates}}<span class='school-padding'>{{job.location}}</span></div>
         <div class="job-layout">{{job.description}}</div>

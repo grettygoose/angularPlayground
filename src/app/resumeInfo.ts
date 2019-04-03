@@ -21,6 +21,7 @@ export class JobsInfo {
   dates: string;
   url: string;
   description: string;
+  program: string;
 }
 export class ProjectsInfo {
   title: string;
